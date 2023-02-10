@@ -1,0 +1,24 @@
+package dawidborkowski.dawidborkowski;
+
+public class UserSession {
+    private static UserSession instance = null;
+    private int userId;
+
+    private UserSession() {
+    }
+
+    public static UserSession getInstance() {
+        if (instance == null) {
+            instance = new UserSession();
+        }
+        return instance;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+}

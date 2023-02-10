@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+
+<?import javafx.scene.layout.VBox?>
+<VBox fx:controller="dawidborkowski.dawidborkowski.HomeController" xmlns:fx="http://javafx.com/fxml">
+
+   <ToolBar>
+      <Button text="Add Book" onMouseClicked="#addBook"></Button>
+   </ToolBar>
+   <ScrollPane fitToWidth="true" fitToHeight="true">
+   <content>
+      <TableView fx:id="table">
+
+      </TableView>
+   </content>
+   </ScrollPane>
+</VBox>
